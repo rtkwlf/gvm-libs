@@ -1,0 +1,11 @@
+Source: gvm-libs
+Maintainer: arcticwolf
+Section: net
+Priority: optional
+Standards-Version: 4.1.5
+Build-Depends: debhelper (>= 9)
+
+Package: gvm-libs
+Architecture: any
+Description: This is the libraries module for the Greenbone Vulnerability Management Solution.
+ It is used for the Greenbone Security Manager appliances and provides various functionalities to support the integrated service daemons.
