@@ -1,0 +1,9 @@
+gvm-libs (0.1.999999) UNRELEASED; urgency=medium
+
+  [ root ]
+  * Initial release. (Closes: #XXXXXX)
+
+  [ rtkwlf ]
+  * new version 0.1.999999
+
+ -- rtkwlf <>  Thu, 24 Jun 2021 14:35:43 +0000
