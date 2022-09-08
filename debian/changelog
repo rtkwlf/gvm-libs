@@ -1,0 +1,9 @@
+gvm-libs (22.4.0-awn0.2.999999) UNRELEASED; urgency=medium
+
+  [ root ]
+  * Initial release. (Closes: #XXXXXX)
+
+  [ rtkwlf ]
+  * new version 22.4.0-awn0.2.999999
+
+ -- rtkwlf <>  Wed, 07 Sep 2022 23:06:31 +0000

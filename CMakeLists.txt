@@ -89,7 +89,7 @@ endif (NOT CMAKE_BUILD_TYPE MATCHES "Release")
 
 # Set dev version if this is a development version and not a full release,
 # unset (put value 0 or delete line) before a full release and reset after.
-set (PROJECT_DEV_VERSION 1)
+set (PROJECT_DEV_VERSION 0)
 
 # If PROJECT_DEV_VERSION is set, the version string will be set to:
 #   "major.minor.patch~dev${PROJECT_DEV_VERSION}${GIT_REVISION}"
@@ -151,6 +151,7 @@ if (NOT SBINDIR)
   set (SBINDIR "${EXEC_PREFIX}/sbin")
 endif (NOT SBINDIR)
 
+set(LIBDIR "/usr/lib")
 if (NOT LIBDIR)
   set (_DEFAULT_LIBRARY_INSTALL_DIR lib)
   if (EXISTS "${EXEC_PREFIX}/lib32/" AND CMAKE_SIZEOF_VOID_P EQUAL 4)
