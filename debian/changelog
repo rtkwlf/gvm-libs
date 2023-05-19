@@ -1,0 +1,6 @@
+gvm-libs (21.4.3-awn0.1.999999) UNRELEASED; urgency=medium
+
+  [ root ]
+  * Initial release. (Closes: #XXXXXX)
+
+ -- rtkwlf <>  Fri, 19 May 2023 14:51:00 +0000
