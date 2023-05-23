@@ -52,8 +52,8 @@ find_program (CLANG_FORMAT clang-format)
 
 if (CLANG_FORMAT)
   message (STATUS "Looking for clang-format... ${CLANG_FORMAT}")
-  add_custom_target(format COMMAND ${CLANG_FORMAT} "-i" "./base/*.c" 
-                    "./boreas/*.c" "./gmp/*.c" "./osp/*.c" "./util/*.c" 
+  add_custom_target(format COMMAND ${CLANG_FORMAT} "-i" "./base/*.c"
+                    "./boreas/*.c" "./gmp/*.c" "./osp/*.c" "./util/*.c"
                     "./base/*.h" "./boreas/*.h" "./gmp/*.h" "./osp/*.h"
                     "./util/*.h" WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
 else (CLANG_FORMAT)
@@ -174,6 +174,7 @@ if (NOT DATADIR)
   set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 endif (NOT DATADIR)
 
+set (GVM_RUN_DIR      "/usr/var/run")
 if (NOT GVM_RUN_DIR)
   set (GVM_RUN_DIR  "/run/gvm")
 endif (NOT GVM_RUN_DIR)
@@ -226,7 +227,7 @@ if (BUILD_TESTS AND NOT SKIP_SRC)
   add_custom_target (tests
     DEPENDS array-test alivedetection-test boreas_error-test boreas_io-test
             cli-test cvss-test ping-test sniffer-test util-test networking-test
-            passwordbasedauthentication-test xmlutils-test version-test osp-test 
+            passwordbasedauthentication-test xmlutils-test version-test osp-test
             nvti-test hosts-test)
 
 endif (BUILD_TESTS AND NOT SKIP_SRC)
